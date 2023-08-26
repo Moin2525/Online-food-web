@@ -1,0 +1,78 @@
+.header {
+    position: sticky;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header::before {
+    height: 155%;
+    width: 111%;
+}
+
+ul li a {
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin: 0;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 26rem;
+}
+
+.first::before {
+    height: 85%;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 116rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.third {
+    height: 26rem;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items img {
+    height: 5rem;
+    width: 2.7rem;
+}
+
+.third::before {
+    height: 57%;
+}
+
+.Contact {
+    height: 32rem;
+}
+
+.Contact::before {
+    height: 21rem;
+}
+
+form input {
+    width: 15rem;
+}

@@ -1,0 +1,373 @@
+* {
+    font-family: 'Bree Serif', serif;
+    padding: 0;
+    margin: 0;
+    /*box-sizing: border-box;*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 4.5rem;
+}
+
+.header::before {
+    content: "";
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    top: 0.01rem;
+    z-index: -1;
+    height: 86%;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    padding-right: 20px;
+}
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first::before {
+    content: "";
+    background: url(../food.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.6rem;
+    border-radius: 1rem;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+button:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+    background-color: blueviolet;
+    /*transform: rotate(360deg);*/
+    transform: scale(1.2);
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    border: 4px solid red;
+    border-radius: 3rem;
+    padding: 3rem 2rem;
+    margin: 2rem;
+}
+
+.box img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients,
+.Services {
+    font-size: 2.2rem;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items img {
+    padding: 3rem;
+    height: 10rem;
+    width: 15rem;
+}
+
+.third::before {
+    content: "";
+    background: url(../Contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 19rem;
+    font-size: 1.3rem;
+}
+
+.Contact::before {
+    content: "";
+    background: url(../Clients.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 19.8rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+form input {
+    display: block;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 1rem;
+    width: 25rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    /*outline: none;*/
+}
+
+form input[type='submit'] {
+    cursor: pointer;
+    width: 8rem;
+}
+
+form input[type='submit']:hover {
+    background-color: blanchedalmond;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    background-color: black;
+}
+
+
+
+
+
+
+
+/*
+body {
+    background: url(../spiderman.jpg) no-repeat center center/cover;
+    background-position: 0px 0px;
+}
+
+ul li a:hover {
+    color: blue;
+}
+
+h1 {
+    color: red;
+    border: 3px solid blue;
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    font: weight 100px;
+    text-decoration:underline;
+}
+
+#p1 {
+    color: darkred;
+    height: 79px;
+    width: 299px;
+    padding: 33px;
+
+    position: absolute;
+    top: 299px;
+    left: 32px;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    border: 4px solid crimson;
+    width   style   color
+    border-top:2px solid chartreuse;
+    border-bottom:2px solid purple;
+    border-left:2px solid violet;
+    border-right:2px solid yellowgreen;
+
+    border-radius: 30px;
+    border-top-right-radius: 22px;
+
+}
+
+#p1:hover {
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+    background-position: center;
+}
+
+.you{
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+    top: 569px;
+    left:33px;
+}
+
+a:hover{
+    color: blue;
+}
+.contact {
+    border: 2px solid red;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.contact:hover {
+    background-color: rgb(35, 35, 185);
+}
+
+
+.left {
+    color: blue;
+    border: 2px solid red;
+    display: inline-block;
+    position: absolute;
+    left: 66px;
+    bottom: 520px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mid {
+    color: aliceblue;
+    border: 2px solid red;
+    position: absolute;
+    right: 450px;
+    bottom: 539px;
+    display: inline-block;
+    width: 508px;
+    margin: auto;
+}
+
+
+.right {
+    border: 2px solid red;
+    display: inline-block;
+    position: absolute;
+    right: 73px;
+    width: 158px;
+    bottom: 563px;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.head img {
+    height: 57px;
+    width: 100px;
+}
+
+.mid a {
+    text-decoration: none;
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+.mid ul {
+    list-style: none;
+
+}
+
+#name,#Roll {
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 11px;
+    padding: 8px;
+}
+
+h3{
+    color: blue;
+    font-weight: bold;
+}
+.e{
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+.read{
+    font-size: x-large;
+    position: absolute;
+    top: 516px;
+    left: 38px;
+}*/
